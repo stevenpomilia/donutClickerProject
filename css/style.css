@@ -1,0 +1,92 @@
+/* * {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+.sectionLeft {
+  float: left;
+  width: 80%;
+  text-align: center;
+}
+
+.sectionRight {
+  float: right;
+  width: 20%;
+}
+
+.donutCounterContainer {
+  background-color: rgb(238, 238, 238, 0.6);
+  display: inline-block;
+  width: 25%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.clickerContainer img {
+  padding: 1em;
+  position: relative;
+  transition: all 2s ease-in-out 0s;
+}
+
+.clickerContainer img:hover {
+  transform: scale(1.1);
+}
+
+.clickerContainer img in:active {
+  transform: scale(0.99);
+}
+
+.clickerPurchaseButtons {
+  background-color: #b5b5b5;
+  transition: all 0.2 ease-in-out;
+  border-radius: 10px;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.clickerPurchaseButtons:hover {
+  background-color: #c7c7c7;
+  transition: all 0.2 ease-in-out;
+}
+
+.clickerPurchaseButtons img {
+  height: 65px;
+  width: 65px;
+}
+
+#slowPokeData,
+#jolteonData,
+#gyaradosData {
+  text-align: center;
+}
+
+.clickerPurchaseButtons #nameAndCost p {
+  margin: 0px;
+  width: 60%;
+  font-size: 15px;
+}
+
+.clickerPurchaseButtons #nameAndCost p:first-of-type {
+  font-size: 24px;
+}
+
+#slowPokesPurchased,
+#jolteonPurchased,
+#gyaradosPurchased {
+  font-size: 48px;
+  color: #595959;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 15%;
+}
+
+.undraggableImage {
+  user-select: none;
+}
+
+.sectionFooter {
+  margin-bottom: auto;
+}

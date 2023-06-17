@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <title>Donut Maker Clicker</title>
+</head>
+
+<body>
+  <header>
+    <!-- <h1>Fred The Baker Baking Company</h1> -->
+  </header>
+  <main>
+
+    <section id="donutClickerAndCount">
+      <div class="sectionLeft">
+        <div class="donutCounterContainer">
+          <span>Donut Count: <span id="donutCount">0</span></span>
+          <span>Level: <span id="level">1</span></span><br />
+        </div>
+        <div class="clickerContainer undraggableImage">
+          <img src="/images/donutClicker-main-button.png" height="250px" width="250px"
+            onclick="donutClick(donutsPerClick)" alt="Donut Clicker Button" />
+        </div>
+        <button onclick="saveGame()">Save Game</button>
+      </div>
+    </section>
+
+    <section id="autoClickers">
+      <div class="sectionRight">
+        <table class="clickerPurchaseButtons undraggableImage" onclick="purchaseSlowPoke()">
+          <tr>
+            <td id="slowPokeData">
+              <img id="slowPokeImage" src="/images/slowPokeImage.png" alt="Image of Slowpoke" />
+            </td>
+            <td id="nameAndCost">
+              <p>Slowpoke's</p>
+              <p><span id="slowPokePrice">150</span> donuts</p>
+            </td>
+            <td id="slowPokesPurchased"><span id="slowPokeCount">0</span></td>
+          </tr>
+        </table>
+        <table class="clickerPurchaseButtons undraggableImage" onclick="purchaseJolteon()">
+          <tr>
+            <td id="jolteonData">
+              <img id="jolteonImage" src="/images/jolteonImage.png" alt="Image of Jolteon" />
+            </td>
+            <td id="nameAndCost">
+              <p>Jolteon's</p>
+              <p><span id="jolteonPrice">250</span> donuts</p>
+            </td>
+            <td id="jolteonPurchased"><span id="jolteonCount">0</span></td>
+          </tr>
+        </table>
+        <table class="clickerPurchaseButtons undraggableImage" onclick="purchaseGyarados()">
+          <tr>
+            <td id="gyaradosData">
+              <img id="gyaradosImage" src="/images/gyaradosImage.png" alt="Image of Gyarados" />
+            </td>
+            <td id="nameAndCost">
+              <p>Gyarados</p>
+              <p><span id="gyaradosPrice">750</span> donuts</p>
+            </td>
+            <td id="gyaradosPurchased"><span id="gyaradosCount">0</span></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script src="/js/DonutMaker.js"></script>
+
+  <footer>
+    <div class="sectionFooter">
+      <h5>Inspired by Cookie Clicker</h5>
+      <button onclick="resetGame()">Reset Game</button>
+    </div>
+  </footer>
+</body>
+
+</html>
